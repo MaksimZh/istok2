@@ -56,7 +56,7 @@ class Input(Slot[T]):
     
     def __set__(self, solver: Solver, value: T | InputID[T] | OutputID[T]) -> None:
         if isinstance(value, InputID):
-            
+            ...
         solver.add_input(self._name, value)
 
 
